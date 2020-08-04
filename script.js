@@ -1,8 +1,8 @@
 $(document.body).ready(function () {
   // Display current time, use setInterval to display each second
+
   setInterval(function () {
-    var seconds = new Date();
-    $("#currentDay").html(seconds);
+    $("#currentDay").html(moment().format('MMMM Do YYYY, h:mm:ss a'));
   }, 1000);
 
   // Determine current hour
